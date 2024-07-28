@@ -1,7 +1,11 @@
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes/Router'
 import './styles/globalStyles.css'
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
-    <h1>App</h1>
+    <>
+      <RouterProvider router={router}/>
+    </>
   )
 }

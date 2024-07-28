@@ -1,14 +1,8 @@
 # Projeto Valorant Informations
 
-## Neste projeto irei construir um site que ofereça informações sobre o jogo Valorant, da empresa Riot.
+## Alterações deste commit: 
+- Criação das pastas: (pages / routes)
+- Nas pastas pages criei outras pastar para cada página do nosso site: agentes, armas e etc. E um arquivo tsx vazio para colocar nas rotas
+- Crie as rotas na pasta routes e já coloquei o Provider no App.tsx
 
-### Pretendo criar abas como: 
-- Agentes
-- Armas
-- Mapas
-- Bundles
-- Competitivo
-
-Api que irei utilizar será do site: https://dash.valorant-api.com
-
-> Projeto criado em: 28/07/2024 - 00:06
+> Commit do dia: 28/07/2024 - 1:00
