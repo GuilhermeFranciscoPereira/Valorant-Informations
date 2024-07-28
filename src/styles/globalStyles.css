@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff4654;
+    --background: #0f1722;
+}
+
+body {
+    width: 99vw;
+    background-color: var(--background);
+    color: white;
+}

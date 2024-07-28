@@ -1,0 +1,94 @@
+:root {
+    --red: #ff4654;
+    --background: #0f1722;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    height: 15vh;
+    border-bottom: 2px solid var(--red);
+    border-radius: 50px;
+}
+
+header > .linkToIndex {
+    height: 100%;
+}
+
+header > .linkToIndex > img {
+    height: 100%;
+    border-bottom: 2px solid var(--red);
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px var(--red);
+    transition: .3s ease-in-out;
+}
+
+header > .linkToIndex > img:hover {
+    box-shadow: 2px 2px 50px var(--red);
+}
+
+header > nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8vw;
+}
+
+header > nav > .LinksTo {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--red);
+    text-shadow: 3px 3px black;
+    position: relative;
+}
+
+header > nav > .LinksTo::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    background-color: var(--red);
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+header > nav > .LinksTo:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    header > nav {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+        height: 20vh;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    
+    header > .linkToIndex > img {
+        height: 60%;
+        margin-top: 50px;
+        border-bottom: 2px solid var(--red);
+        border-radius: 50px;
+        box-shadow: 2px 2px 20px var(--red);
+        transition: .3s ease-in-out;
+    }
+
+    header > nav {
+        margin-top: 0px;
+        font-size: 4vw;
+        margin-bottom: 40px;
+    }
+
+    header > nav > .LinksTo:hover::after {
+        width: 0%;
+    }
+}

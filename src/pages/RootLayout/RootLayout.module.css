@@ -1,0 +1,15 @@
+.main {
+    /* background-color: white; */
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .main {
+        margin-top: 40px;
+    }
+}
