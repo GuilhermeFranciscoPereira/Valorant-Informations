@@ -1,0 +1,132 @@
+:root {
+    --red: #ff4654;
+    --background: #0f1722;
+}
+
+.indexSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.indexSection > h1 {
+    font-size: 4vw;
+    color: var(--red);
+    text-shadow: 2px 2px black;
+    margin-bottom: 80px;
+}
+
+.indexSection > h2 {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 70px;
+}
+
+.indexSection > h2 > span {
+    color: var(--red);
+}
+
+.indexSection > p {
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.indexSection > .informationsAboutTheCreator {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    box-shadow: 10px 1px 50px black;
+    margin: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.indexSection > .informationsAboutTheCreator > img {
+    width: 15%;
+    border-radius: 50px;
+}
+
+.indexSection > .informationsAboutTheCreator > .textsDiv {
+    font-size: 1.3vw;
+    padding: 50px;
+}
+
+.indexSection > .informationsAboutTheCreator > .textsDiv > h3 {
+    margin-bottom: 30px;
+}
+
+.indexSection > .informationsAboutTheCreator > .textsDiv > hr {
+    border: none;
+    border-bottom: 2px dotted var(--red);
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .indexSection > h1 {
+        margin-bottom: 50px;
+    }
+
+    .indexSection > h2 {
+        font-size: 3vw;
+        margin-bottom: 50px;
+    }
+
+    .indexSection > p {
+        font-size: 2.5vw;
+    }
+
+    .indexSection > .informationsAboutTheCreator {
+        margin: 50px 10px;
+        padding: 5px;
+    }
+
+    .indexSection > .informationsAboutTheCreator > img {
+        width: 25%;
+    }
+    
+    .indexSection > .informationsAboutTheCreator > .textsDiv {
+        font-size: 2vw;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .indexSection > h1 {
+        font-size: 6vw;
+        margin-bottom: 40px;
+    }
+
+    .indexSection > h2 {
+        font-size: 5vw;
+        margin: 0 10px 40px 10px;
+    }
+
+    .indexSection > p {
+        font-size: 5vw;
+        margin: 0 10px;
+    }
+
+    .indexSection > .informationsAboutTheCreator {
+        flex-direction: column;
+        margin: 50px;
+        padding: 5px;
+    }
+
+    .indexSection > .informationsAboutTheCreator > img {
+        width: 80%;
+        align-self: center;
+    }
+    
+    .indexSection > .informationsAboutTheCreator > .textsDiv {
+        font-size: 5vw;
+        margin: 0 5px 40px 5px;
+    }
+
+    .indexSection > .informationsAboutTheCreator > .textsDiv > h3 {
+        font-size: 5vw;
+        margin-bottom: 30px;
+    }
+}

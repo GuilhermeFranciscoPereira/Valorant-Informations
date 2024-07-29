@@ -1,12 +1,12 @@
 # Projeto Valorant Informations
 
-## Alterações deste commit: 
-- Criação das pastas: (@types / assets / components)
-- Nas pastas types criei o arquivo module.css.d.ts para configurar a declaração dos modules.css. Já que sem esse arquivo o vsCode aponta um erro de caminho. (Já adicionei ao gitignore)
-- Na pasta assets criei o arquivo para a exportação já pronta da nossa imagem que fica no Header, a logo do jogo. 
-- Na pasta components criei a pasta Header, onde já criei o Header completo, com a estilização e sua responsividade.
-- Na pasta Pages > RootLayout já adicionei o nosso Header como um componente fixo e já adicionei também o Outlet para o nosso router.
-- No Index eu coloquei também o favicon do site.
-- Pequenas alteraçõs no styles > globalStyles.
+## Prints das telas do Index (pc / mobile):
 
-> Commit do dia: 28/07/2024 - 10:10
+![Foto do Index - PC - Primeira versão](./src/assets/indexPage-firstVersion.png)
+![Foto do Index - Mobile - Primeira versão](./src/assets/indexPage-mobile-firstVersion.png)
+
+## Alterações deste commit: 
+- Na pasta assets, criei o arquivo .tsx (omenCat) foto que fica no index do site, e adicionei dois prints para demonstração de como estão as telas, para pc e para mobile.
+- Pages > Index: Criei o Index do site e também a pasta module.css para a estilização e responsividade
+
+> Commit do dia: 29/07/2024 - 20:36
