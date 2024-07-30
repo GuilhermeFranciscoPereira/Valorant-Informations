@@ -9,6 +9,16 @@
     --background: #0f1722;
 }
 
+::-webkit-scrollbar {
+    border: 1px dotted var(--red);
+    border-radius: 100px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff4656bd;
+    border-radius: 100px;
+}
+
 body {
     width: 99vw;
     background-color: var(--background);
