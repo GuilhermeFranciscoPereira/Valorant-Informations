@@ -9,7 +9,7 @@ import Comp from "../pages/Comp";
 
 export const router = createBrowserRouter([
     {
-        path: '/',
+        path: 'Valorant-Informations',
         element: <RootLayout/>,
         children: [
             {
