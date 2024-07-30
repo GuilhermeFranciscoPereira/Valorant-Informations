@@ -1,5 +1,7 @@
 # Projeto Valorant Informations
 
+> Link do site: https://guilhermefranciscopereira.github.io/Valorant-Informations/
+
 ## Prints das telas do Index (pc / mobile):
 
 ![Foto do Index - PC - Primeira versão](./src/assets/indexPage-firstVersion.png)
