@@ -58,7 +58,6 @@ export default function ShowAgentChoosed(): JSX.Element | undefined {
                 <>
                     {<section className={styles.agentClicked}>
                     <div className={styles.superiorDiv}>
-        
                         <img src={agentClicked[0].fullPortrait} alt={"Foto do agente" + agentClicked[0].displayName} />
                         <div className={styles.informationsAboutAgentClicked}>
                             <h1>{agentClicked[0].displayName}</h1>
@@ -105,7 +104,5 @@ export default function ShowAgentChoosed(): JSX.Element | undefined {
         } finally {
             const inputAgentName: HTMLInputElement = document.querySelector('#agentNameInput') as HTMLInputElement
             inputAgentName.value = ''
-            inputAgentName.focus();
         }
-    }
 }
