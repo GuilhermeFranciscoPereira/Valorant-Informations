@@ -1,0 +1,523 @@
+:root {
+    --red: #ff4654;
+    --background: #0f1722;
+}
+
+.gunsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gunsSection > h1, .loading {
+    text-align: center;
+    font-size: 4vw;
+    color: var(--red);
+    text-shadow: 2px 2px black;
+    margin-bottom: 80px;
+}
+
+.gunsSection > h2, .howToUse {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.gunsSection > form > input {
+    border: none;
+    border-radius: 30px;
+    width: 30vw;
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 50px;
+    transition: .5s ease-in-out;
+}
+
+.gunsSection > form > input:hover {
+    width: 40vw;
+}
+
+.gunsSection > form > button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-left: 30px;
+    cursor: pointer ;
+}
+
+.gunsSection > hr {
+    border: none;
+    border-bottom: 4px dotted var(--red);
+    width: 90vw;
+    margin: 20px 0px;
+}
+
+.gunClicked {
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.gunClicked > .superiorDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gunClicked > .superiorDiv > .informationsAboutGunClicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vw;
+    font-size: 1.5vw;
+    gap: 10px;
+}
+
+.gunClicked > .superiorDiv > .informationsAboutGunClicked > h1 {
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.gunClicked > .superiorDiv > .informationsAboutGunClicked > p {
+    border-bottom: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.gunClicked > .superiorDiv > .informationsAboutGunClicked > h2 {
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+
+.gunClicked > .inferiorDiv > h2 {
+    color: var(--red);
+    font-size: 4vw;
+    margin-top: 50px;
+}
+
+.gunClicked > .inferiorDiv > hr {
+    border: none;
+    border-bottom: 4px dotted var(--red);
+    margin: 50px;
+}
+
+.gunClicked > .inferiorDiv > .informationsSection {
+    display: flex;
+    gap: 10px;
+}
+
+.gunClicked > .inferiorDiv > .informationsSection > .twoDivs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    border: 2px solid var(--red);
+    border-radius: 80px;
+    padding: 20px;
+    gap: 30px;
+    transition: .7s ease-in-out;
+    cursor: pointer;
+}
+
+.gunClicked > .inferiorDiv > .informationsSection > .twoDivs:hover {
+    padding: 40px;
+    box-shadow: 2px 2px 20px var(--red);
+}
+
+.gunClicked > .inferiorDiv > .informationsSection > .twoDivs:hover h2{
+    color: var(--red);
+}
+
+.gunClicked > .inferiorDiv > .informationsSection > .twoDivs > h2 {
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.gunClicked > .inferiorDiv > .informationsSection > .twoDivs > h3 {
+    border-bottom: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.gunClicked > .inferiorDiv > .skinsSection > button {
+    border: 2px solid var(--red);
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px var(--red);
+    padding: 40px;
+    background-color: transparent;
+    color: var(--red);
+    font-size: 1.5vw;
+    margin: 50px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.gunClicked > .inferiorDiv > .skinsSection > button:hover {
+    padding: 50px;
+}
+
+.gunClicked > .inferiorDiv > .skinsSection > button:active {
+    transition: .1s;
+    box-shadow: 2px 2px 100px var(--red);
+}
+
+.gunClicked > .inferiorDiv > .skinsSection > .cardsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gunClicked > .inferiorDiv > .skinsSection > .cardsContainer> .cardsSkins {
+    border: 1px solid var(--red);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px var(--red);
+    cursor: pointer;
+    padding: 40px;
+}
+
+.showAllGuns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 99vw;
+    gap: 1vw;
+    margin-bottom: 50px;
+}
+
+.showAllGuns > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 23vw;
+    border: 1px solid var(--red);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px var(--red);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.showAllGuns > div:hover {
+    width: 25vw;
+}
+
+.showAllGuns > div:active {
+    transition: .1s;
+    border: 50px solid var(--red);
+    border-radius: 100px;
+}
+
+.showAllGuns > div > img {
+    width: 100%;
+}
+
+.showAllGuns > div > p {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--red);
+    text-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+    .gunsSection > h1, .loading {
+        text-align: center;
+        font-size: 4vw;
+        color: var(--red);
+        text-shadow: 2px 2px black;
+        margin: 40px;
+    }
+    
+    .gunsSection > h2, .howToUse {
+        text-align: center;
+        font-size: 3vw;
+        margin: 0px 20px 40px;
+    }
+
+    .gunsSection > form > input {
+        width: 50vw;
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    
+    .gunsSection > form > input:hover {
+        width: 70vw;
+    }
+
+    .gunClicked > .superiorDiv > img {
+        width: 70vw;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    .gunClicked > .superiorDiv > .informationsAboutGunClicked {
+        padding: 3vw;
+        font-size: 2vw;
+        gap: 30px;
+    }
+    
+    .gunClicked > .inferiorDiv > hr {
+        margin: 40px;
+    }
+
+    .gunClicked > .inferiorDiv > .informationsSection > .twoDivs {
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .gunClicked > .inferiorDiv > .informationsSection > .twoDivs:hover {
+        padding: 10px;
+    }
+
+    .gunClicked > .inferiorDiv > .skinsSection > button {
+        font-size: 3vw;
+    }
+    
+    .gunClicked > .inferiorDiv > .skinsSection > button:hover {
+        padding: 40px;
+    }
+
+    .showAllGuns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 97vw;
+        gap: 1vw;
+        margin: 50px 0px;
+    }
+    
+    .showAllGuns > div {
+        width: 31vw;
+    }
+
+    .showAllGuns > div:hover {
+        width: 31vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 426px) {
+    .gunsSection > h1, .loading {
+        text-align: center;
+        font-size: 5.5vw;
+        color: var(--red);
+        text-shadow: 2px 2px black;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .gunsSection > h2, .howToUse {
+        text-align: center;
+        font-size: 5vw;
+        margin: 0px 20px 40px;
+    }
+
+    .gunsSection > form > input {
+        width: 70vw;
+        margin-bottom: 40px;
+        font-size: 2.7vw;
+    }
+    
+    .gunsSection > form > input:hover {
+        width: 60vw;
+    }
+
+    .gunsSection > form > button {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .gunClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .gunClicked > .superiorDiv > img {
+        width: 80vw;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    .gunClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .gunClicked > .superiorDiv > .informationsAboutGunClicked {
+        padding: 0vw;
+        font-size: 3vw;
+        gap: 20px;
+    }
+
+    .gunClicked > .superiorDiv > .informationsAboutGunClicked > p {
+        font-size: 4vw;
+    }
+
+    .gunClicked > .inferiorDiv > h2 {
+        font-size: 6vw;
+        margin-top: 50px;
+    }
+    
+    .gunClicked > .inferiorDiv > hr {
+        margin: 40px;
+    }
+
+    .gunClicked > .inferiorDiv > .informationsSection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gunClicked > .inferiorDiv > .informationsSection > .twoDivs {
+        align-self: center;
+        width: 80vw;
+        padding: 20px;
+    }
+
+    .gunClicked > .inferiorDiv > .informationsSection > .twoDivs:hover {
+        padding: 20px;
+    }
+    
+    .gunClicked > .inferiorDiv > .skinsSection > button {
+        font-size: 4.5vw;
+    }
+    
+    .gunClicked > .inferiorDiv > .skinsSection > button:hover {
+        padding: 40px;
+    }
+    
+
+    .showAllGuns {
+        flex-direction: column;
+        width: 99vw;
+        gap: 5vw;
+    }
+    .showAllGuns > div {
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .showAllGuns > div:hover {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .gunsSection > h1, .loading {
+        text-align: center;
+        font-size: 6.5vw;
+        color: var(--red);
+        text-shadow: 2px 2px black;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .gunsSection > h2, .howToUse {
+        text-align: center;
+        font-size: 4.5vw;
+        margin: 0px 20px 40px;
+    }
+
+    .gunsSection > form > input {
+        width: 60vw;
+        margin-bottom: 40px;
+        font-size: 2.7vw;
+    }
+    
+    .gunsSection > form > input:hover {
+        width: 60vw;
+    }
+
+    .gunsSection > form > button {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .gunClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .gunClicked > .superiorDiv > img {
+        width: 80vw;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    .gunClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .gunClicked > .superiorDiv > .informationsAboutGunClicked {
+        padding: 0vw;
+        font-size: 3vw;
+        gap: 20px;
+    }
+
+    .gunClicked > .superiorDiv > .informationsAboutGunClicked > p {
+        font-size: 4vw;
+    }
+
+    .gunClicked > .inferiorDiv > h2 {
+        font-size: 6vw;
+        margin-top: 50px;
+    }
+    
+    .gunClicked > .inferiorDiv > hr {
+        margin: 40px;
+    }
+
+    .gunClicked > .inferiorDiv > .informationsSection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .gunClicked > .inferiorDiv > .informationsSection > .twoDivs {
+        align-self: center;
+        width: 80vw;
+        padding: 20px;
+    }
+    
+    .gunClicked > .inferiorDiv > .informationsSection > .twoDivs:hover {
+        padding: 20px;
+    }
+
+    .gunClicked > .inferiorDiv > .skinsSection > button {
+        font-size: 4.5vw;
+    }
+    
+    .gunClicked > .inferiorDiv > .skinsSection > button:hover {
+        padding: 40px;
+    }
+
+    .gunClicked > .inferiorDiv > .skinsSection > .cardsContainer> .cardsSkins > img {
+        width: 70vw;
+    }
+
+    .showAllGuns {
+        flex-direction: column;
+        width: 99vw;
+        gap: 5vw;
+    }
+    
+    .showAllGuns > div {
+        height: 55vh;
+        width: 90vw;
+    }
+
+    .showAllGuns > div:hover {
+        width: 90vw;
+    }
+
+    .showAllGuns > div > p {
+        margin-top: 30px;
+    }
+}

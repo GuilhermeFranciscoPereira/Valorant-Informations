@@ -105,4 +105,5 @@ export default function ShowAgentChoosed(): JSX.Element | undefined {
             const inputAgentName: HTMLInputElement = document.querySelector('#agentNameInput') as HTMLInputElement
             inputAgentName.value = ''
         }
+    }
 }
