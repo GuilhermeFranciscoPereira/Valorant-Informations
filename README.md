@@ -2,31 +2,45 @@
 
 > Link do site: https://guilhermefranciscopereira.github.io/Valorant-Informations/
 
-## Prints das telas da aba de armas no fim deste readMe!
+## Prints das telas da aba de mapas no fim deste readMe!
 
-> Commit do dia: 01/08/2024 - 12:09
+> Commit do dia: 02/08/2024 - 08:26
 
 ## Alterações deste commit: 
-- Criação das pastas: (contexts > guns / hooks > guns / pages > Guns).
-Criei o contexto de guns e em pages > Guns criei o module.css e o conteúdo da página.
+- Alterações das pastas: (contexts / hooks / pages )
 
-- Adicionei o context de Guns em contexts > App.tsx para compartilhar tudo de uma única vez no provider de App.tsx
+### contexts 
+- contexts > agents: para ficar igual as outras seções eu removi o finally em hooks > agents > ShowAgentChoosed e adicionei ao context para ser ativado assim que for feita a requisição para qualquer agente.
 
-- Criei os hooks da seção de armas para implementar em pages > Guns
+- contexts > maps: Criei o contexto de mapas para ser compartilhado com qualquer parte do código e adicionei esse contexto ao: context > AppContext.tsx (Responsavel por ir ao App.tsx).
 
-- Alterações na pasta pages > Agents, criei o nosso module.css e adicionei a estrutura da aba Agentes do site. 
+### hooks:
 
-- Pequena mudança em: hooks > agents > ShowAgentChoosed.tsx. Onde adicionei um "}" que faltou para o IF
+- hooks > agents: Pequenas correções e alterações no arquivo ShowAgentChoosed.tsx. Além de renomear as pastas que estavam com a primeira letra minuscula para maiuscula (PascalCase)
 
-## Prints das telas da aba de armas (pc / mobile):
+- hooks > guns: Apenas removi o motivo do erro do alert no arquivo ShowGunChoosed.tsx - Muitos usuarios não iriam entender então só deixei a mensagem padrão.
 
-### Tela de início da seção de armas
-![Foto da seção de Armas - Primeira versão (PC - Home Page)](./src/assets/gunPage-FirstVersion-PC.png)
-### Após clicar ou digitar o nome da arma irá aparecer essa tela para informar sobre o arma
-![Foto da seção de Armas - Primeira versão (PC - gun choosed)](./src/assets/gunPage-FirstVersion-showGun-PC.png)
-### Tela de skins da arma escolhida
-![Foto da seção de Armas - Primeira versão (PC - gun choosed skins)](./src/assets/gunPage-FirstVersion-Skins-PC.png)
-### Tela de início da seção de armas ( celular )
-![Foto da seção de Armas - Primeira versão (Mobile - Home Page)](./src/assets/gunPage-FirstVersion-Mobile.png)
-### Tela de skins da arma escolhida ( celular )
-![Foto da seção de armas - Primeira versão (Mobile - gun Choosed skins)](./src/assets/gunPage-FirstVersion-skins-Mobile.png)
+- hooks > maps: Criado todo o hook da seção de mapas.
+
+### pages:
+
+- pages > Agents: Nenhuma alteração. Apenas corrigindo o import para o novo dos arquivos em hooks, onde foi renomeado como PascalCase
+
+- pages > Guns: Nenhuma alteração. Apenas corrigindo o import para o novo dos arquivos em hooks, onde foi renomeado como PascalCase
+
+- pages > Maps: Adicionado a estrutura no index.tsx e criado o arquivo Maps.module.css para a estilização.
+
+## Prints das telas da aba de mapas (pc / mobile):
+
+### Tela de início da seção de mapas
+![Foto da seção de mapas - Primeira versão (PC - Home Page)](./src/assets/mapPage-FirstVersion-PC.png)
+### Após clicar ou digitar o nome do mapa irá aparecer essa tela para informar sobre o mapa
+![Foto da seção de mapas - Primeira versão (PC - map choosed)](./src/assets/mapPage-ShowMap-FirstVersion-PC.png)
+### Após clicar para ver as regiões do mapa
+![Foto da seção de mapas - Primeira versão (PC - all maps)](./src/assets/mapPage-regions-FirstVersion-PC.png)
+### Tela de todos os mapas
+![Foto da seção de mapas - Primeira versão (PC - all maps)](./src/assets/mapPage-FirstVersion-Allmaps-PC.png)
+### Após clicar ou digitar o nome do mapa irá aparecer essa tela para informar sobre o mapa ( celular )
+![Foto da seção de mapas - Primeira versão (Mobile - Home Page)](./src/assets/mapPage-FirstVersion-Mobile.png )
+### Tela de todos os mapa ( celular )
+![Foto da seção de mapas - Primeira versão (Mobile - all maps)](./src/assets/mapPage-FirstVersion-AllMaps-Mobile.png)

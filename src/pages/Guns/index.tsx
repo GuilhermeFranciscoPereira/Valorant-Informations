@@ -1,4 +1,4 @@
-import FormGuns from '../../hooks/guns/formGuns'
+import FormGuns from '../../hooks/guns/FormGuns'
 import ShowAllGuns from '../../hooks/guns/ShowAllGuns'
 import ShowGunChoosed from '../../hooks/guns/ShowGunChoosed'
 import styles from './Guns.module.css'

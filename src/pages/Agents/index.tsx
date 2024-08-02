@@ -1,6 +1,6 @@
 import ShowAgentChoosed from '../../hooks/agents/ShowAgentChoosed';
-import ShowAllAgents from '../../hooks/agents/showAllAgents';
-import FormAgents from '../../hooks/agents/formAgents';
+import ShowAllAgents from '../../hooks/agents/ShowAllAgents';
+import FormAgents from '../../hooks/agents/FormAgents';
 import styles from "./Agents.module.css"
 
 export default function Agents(): JSX.Element {

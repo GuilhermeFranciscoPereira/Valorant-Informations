@@ -21,21 +21,6 @@ type clickedDataProps = {
     }
     abilities: [
         {
-        displayName: string;
-        description: string;
-        displayIcon: string;
-        },
-        {
-            displayName: string;
-            description: string;
-            displayIcon: string;
-        },
-        {
-            displayName: string;
-            description: string;
-            displayIcon: string;
-        },
-        {
             displayName: string;
             description: string;
             displayIcon: string;
@@ -71,29 +56,15 @@ export default function ShowAgentChoosed(): JSX.Element | undefined {
                         <h2>Habilidades:</h2>
                         <hr />
                         <section className={styles.abilities}>
-                        <div className={styles.abilitiesDiv}>
-                            <h2>{agentClicked[0].abilities[0].displayName}</h2>
-                            <p>{agentClicked[0].abilities[0].description}</p>
-                            <img src={agentClicked[0].abilities[0].displayIcon} alt={`Icone da Habilidade: ${agentClicked[0].abilities[0].displayName}`} />
-                        </div>
-                        <div className={styles.abilitiesDiv}>
-                            <h2>{agentClicked[0].abilities[1].displayName}</h2>
-                            <p>{agentClicked[0].abilities[1].description}</p>
-                            <img src={agentClicked[0].abilities[1].displayIcon} alt={`Icone da Habilidade: ${agentClicked[0].abilities[1].displayName}`} />
-                        </div>
-                        <div className={styles.abilitiesDiv}>
-                            <h2>{agentClicked[0].abilities[2].displayName}</h2>
-                            <p>{agentClicked[0].abilities[2].description}</p>
-                            <img src={agentClicked[0].abilities[2].displayIcon} alt={`Icone da Habilidade: ${agentClicked[0].abilities[2].displayName}`} />
-                        </div>
-                        <div className={styles.abilitiesDiv}>
-                            <h2>{agentClicked[0].abilities[3].displayName}</h2>
-                            <p>{agentClicked[0].abilities[3].description}</p>
-                            <img src={agentClicked[0].abilities[3].displayIcon} alt={`Icone da Habilidade: ${agentClicked[0].abilities[3].displayName}`} />
-                        </div>
+                            {agentClicked[0].abilities.map((abilitieMap, index) => (
+                                <div className={styles.abilitiesDiv} key={index}>
+                                    <h2>{abilitieMap.displayName}</h2>
+                                    <p>{abilitieMap.description}</p>
+                                    <img src={abilitieMap.displayIcon} alt={`Icone da Habilidade: ${abilitieMap.displayName}`} />
+                                </div>
+                            ))}
                         </section>
                         <hr/>
-                        
                     </div>
                     </section>
                     }
@@ -101,9 +72,6 @@ export default function ShowAgentChoosed(): JSX.Element | undefined {
             )
         } catch (err) {
             alert(`Agente não encontrado, tente novamente! \nEscreveu o nome do agente de forma correta? Se não consegue achar por aqui você pode encontra-lo na lista completa de agentes abaixo!`);
-        } finally {
-            const inputAgentName: HTMLInputElement = document.querySelector('#agentNameInput') as HTMLInputElement
-            inputAgentName.value = ''
         }
     }
 }

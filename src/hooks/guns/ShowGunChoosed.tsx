@@ -136,7 +136,7 @@ export default function ShowGunChoosed(): JSX.Element | undefined {
                 </>
             )
         } catch (err) {
-            alert(`Arma não encontrada, tente novamente! \nEscreveu o nome da arma de forma correta? Se não consegue achar por aqui você pode encontra-la na lista completa de armas abaixo! \n\nErro: ${err}`);
+            alert(`Arma não encontrada, tente novamente! \nEscreveu o nome da arma de forma correta? Se não consegue achar por aqui você pode encontra-la na lista completa de armas abaixo!`);
         }
     }
 }

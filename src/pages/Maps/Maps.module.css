@@ -1,0 +1,515 @@
+:root {
+    --red: #ff4654;
+    --background: #0f1722;
+}
+
+.mapsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mapsSection > h1, .loading {
+    text-align: center;
+    font-size: 4vw;
+    color: var(--red);
+    text-shadow: 2px 2px black;
+    margin-bottom: 80px;
+}
+
+.mapsSection > h2, .howToUse {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 20px;
+}
+
+.mapsSection > form > input {
+    border: none;
+    border-radius: 30px;
+    width: 30vw;
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 50px;
+    transition: .5s ease-in-out;
+}
+
+.mapsSection > form > input:hover {
+    width: 40vw;
+}
+
+.mapsSection > form > button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    margin-left: 30px;
+    cursor: pointer ;
+}
+
+.mapsSection > hr {
+    border: none;
+    border-bottom: 4px dotted var(--red);
+    width: 90vw;
+    margin: 20px 0px;
+}
+
+.mapClicked {
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+.mapClicked > .superiorDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+}
+
+.mapClicked > .superiorDiv > img {
+    width: 50vw;
+    border-radius: 100px;
+}
+
+.mapClicked > .superiorDiv > .informationsAboutMapClicked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vw;
+    font-size: 1.5vw;
+    gap: 10px;
+}
+
+.mapClicked > .superiorDiv > .informationsAboutMapClicked > h1 {
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.mapClicked > .superiorDiv > .informationsAboutMapClicked > p {
+    border-bottom: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.mapClicked > .superiorDiv > .informationsAboutMapClicked > h2 {
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.mapClicked > .superiorDiv > .informationsAboutMapClicked > img {
+    width: 80%;
+}
+
+.mapClicked > .inferiorDiv > h2 {
+    color: var(--red);
+    font-size: 4vw;
+    margin-top: 50px;
+}
+
+.mapClicked > .inferiorDiv > hr {
+    border: none;
+    border-bottom: 4px dotted var(--red);
+    margin: 50px;
+}
+
+.mapClicked > .inferiorDiv > .informationsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > button {
+    border: 2px solid var(--red);
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px var(--red);
+    padding: 40px;
+    background-color: transparent;
+    color: var(--red);
+    font-size: 1.5vw;
+    margin: 50px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > button:hover {
+    padding: 50px;
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > button:active {
+    transition: .1s;
+    box-shadow: 2px 2px 100px var(--red);
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > .regionsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90vw;
+    border: 2px solid var(--red);
+    border-radius: 80px;
+    padding: 20px;
+    gap: 30px;
+    transition: .7s ease-in-out;
+    cursor: pointer;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > .regionsDiv:hover {
+    padding: 40px;
+    box-shadow: 2px 2px 20px var(--red);
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > .regionsDiv:hover h2{
+    color: var(--red);
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > .regionsDiv > h2 {
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.mapClicked > .inferiorDiv > .informationsSection > .regionsDiv > h3 {
+    border-bottom: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.showAllMaps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 99vw;
+    gap: 1vw;
+    margin-bottom: 50px;
+}
+
+.showAllMaps > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 23vw;
+    border: 1px solid var(--red);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px var(--red);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.showAllMaps > div:hover {
+    width: 25vw;
+}
+
+.showAllMaps > div:active {
+    transition: .1s;
+    border: 50px solid var(--red);
+    border-radius: 100px;
+}
+
+.showAllMaps > div > img {
+    width: 100%;
+}
+
+.showAllMaps > div > p {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--red);
+    text-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+    .mapsSection > h1, .loading {
+        text-align: center;
+        font-size: 4vw;
+        color: var(--red);
+        text-shadow: 2px 2px black;
+        margin: 40px;
+    }
+    
+    .mapsSection > h2, .howToUse {
+        text-align: center;
+        font-size: 3vw;
+        margin: 0px 20px 40px;
+    }
+
+    .mapsSection > form > input {
+        width: 50vw;
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    
+    .mapsSection > form > input:hover {
+        width: 70vw;
+    }
+
+    .mapClicked > .superiorDiv > .informationsAboutMapClicked {
+        padding: 3vw;
+        font-size: 2vw;
+        gap: 30px;
+    }
+    
+    .mapClicked > .inferiorDiv > hr {
+        margin: 40px;
+    }
+
+    .mapClicked > .inferiorDiv > .informationsSection > button {
+        font-size: 3vw;
+    }
+    
+    .mapClicked > .inferiorDiv > .informationsSection > button:hover {
+        padding: 40px;
+    }
+
+    .mapClicked > .inferiorDiv > .informationsSection > .regionsDiv {
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .mapClicked > .inferiorDiv > .informationsSection > .regionsDiv:hover {
+        padding: 10px;
+    }
+
+    .showAllMaps {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 97vw;
+        gap: 1vw;
+        margin: 50px 0px;
+    }
+    
+    .showAllMaps > div {
+        width: 31vw;
+    }
+
+    .showAllMaps > div:hover {
+        width: 31vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 426px) {
+    .mapsSection > h1, .loading {
+        text-align: center;
+        font-size: 5.5vw;
+        color: var(--red);
+        text-shadow: 2px 2px black;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .mapsSection > h2, .howToUse {
+        text-align: center;
+        font-size: 5vw;
+        margin: 0px 20px 40px;
+    }
+
+    .mapsSection > form > input {
+        width: 70vw;
+        margin-bottom: 40px;
+        font-size: 2.7vw;
+    }
+    
+    .mapsSection > form > input:hover {
+        width: 60vw;
+    }
+
+    .mapsSection > form > button {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .mapClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .mapClicked > .superiorDiv > img {
+        width: 100vw;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    .mapClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .mapClicked > .superiorDiv > .informationsAboutMapClicked {
+        padding: 0vw;
+        font-size: 3vw;
+        gap: 20px;
+    }
+
+    .mapClicked > .superiorDiv > .informationsAboutMapClicked > p {
+        font-size: 4vw;
+    }
+
+    .mapClicked > .inferiorDiv > h2 {
+        font-size: 6vw;
+        margin-top: 50px;
+    }
+    
+    .mapClicked > .inferiorDiv > hr {
+        margin: 40px;
+    }
+
+    .mapClicked > .inferiorDiv > .informationsSection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mapClicked > .inferiorDiv > .informationsSection > button {
+        font-size: 4.5vw;
+    }
+    
+    .mapClicked > .inferiorDiv > .informationsSection > button:hover {
+        padding: 40px;
+    }
+
+    .mapClicked > .inferiorDiv > .informationsSection > .regionsDiv {
+        align-self: center;
+        width: 80vw;
+        padding: 20px;
+    }
+
+    .mapClicked > .inferiorDiv > .informationsSection > .regionsDiv:hover {
+        padding: 20px;
+    }
+
+    .showAllMaps {
+        flex-direction: column;
+        width: 99vw;
+        gap: 5vw;
+    }
+    .showAllMaps > div {
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .showAllMaps > div:hover {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .mapsSection > h1, .loading {
+        text-align: center;
+        font-size: 6.5vw;
+        color: var(--red);
+        text-shadow: 2px 2px black;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .mapsSection > h2, .howToUse {
+        text-align: center;
+        font-size: 4.5vw;
+        margin: 0px 20px 40px;
+    }
+
+    .mapsSection > form > input {
+        width: 60vw;
+        margin-bottom: 40px;
+        font-size: 2.7vw;
+    }
+    
+    .mapsSection > form > input:hover {
+        width: 60vw;
+    }
+
+    .mapsSection > form > button {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .mapClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .mapClicked > .superiorDiv > img {
+        width: 100vw;
+        align-self: center;
+        margin-bottom: 50px;
+    }
+
+    .mapClicked > .superiorDiv {
+        flex-direction: column;
+    }
+
+    .mapClicked > .superiorDiv > .informationsAboutMapClicked {
+        padding: 0vw;
+        font-size: 3vw;
+        gap: 20px;
+    }
+
+    .mapClicked > .superiorDiv > .informationsAboutMapClicked > p {
+        font-size: 4vw;
+    }
+
+    .mapClicked > .inferiorDiv > h2 {
+        font-size: 6vw;
+        margin-top: 50px;
+    }
+    
+    .mapClicked > .inferiorDiv > hr {
+        margin: 40px;
+    }
+
+    
+    .mapClicked > .inferiorDiv > .informationsSection {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .mapClicked > .inferiorDiv > .informationsSection > button {
+        font-size: 4.5vw;
+    }
+    
+    .mapClicked > .inferiorDiv > .informationsSection > button:hover {
+        padding: 40px;
+    }
+
+    .mapClicked > .inferiorDiv > .informationsSection > .cardsContainer> .cardsSkins > img {
+        width: 70vw;
+    }
+    
+    .mapClicked > .inferiorDiv > .informationsSection > .regionsDiv {
+        align-self: center;
+        width: 80vw;
+        padding: 20px;
+    }
+    
+    .mapClicked > .inferiorDiv > .informationsSection > .regionsDiv:hover {
+        padding: 20px;
+    }
+
+    .showAllMaps {
+        flex-direction: column;
+        width: 99vw;
+        gap: 5vw;
+    }
+    
+    .showAllMaps > div {
+        height: 55vh;
+        width: 90vw;
+    }
+
+    .showAllMaps > div:hover {
+        width: 90vw;
+    }
+
+    .showAllMaps > div > p {
+        margin-top: 30px;
+    }
+}
