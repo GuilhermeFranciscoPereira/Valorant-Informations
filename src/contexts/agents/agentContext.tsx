@@ -13,7 +13,7 @@ const AgentProvider = ({ children }: { children: React.ReactNode}): JSX.Element 
     function toSetAgentName(name: string) {
         setAgentName(name);
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        const inputAgentName: HTMLInputElement = document.querySelector('#agentNameInput') as HTMLInputElement
+        const inputAgentName: HTMLInputElement = document.querySelector('#FormNameInput') as HTMLInputElement
         inputAgentName.value = ''
     }
     

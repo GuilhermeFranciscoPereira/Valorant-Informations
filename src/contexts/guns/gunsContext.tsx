@@ -13,7 +13,7 @@ const GunProvider = ( {children}: {children: React.ReactNode} ) => {
     function toSetGunName(name: string) {
         setGunName(name);
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        const inputGunName: HTMLInputElement = document.querySelector('#gunNameInput') as HTMLInputElement
+        const inputGunName: HTMLInputElement = document.querySelector('#FormNameInput') as HTMLInputElement
         inputGunName.value = ''
     }
 

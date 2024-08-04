@@ -13,7 +13,7 @@ const MapsProvider = ({children}: {children: React.ReactNode}): JSX.Element => {
     function toSetMapName(map: string): void {
         setMapname(map);
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        const inputMapName: HTMLInputElement = document.querySelector('#inputMapName') as HTMLInputElement
+        const inputMapName: HTMLInputElement = document.querySelector('#FormNameInput') as HTMLInputElement
         inputMapName.value = ''
     }
     
