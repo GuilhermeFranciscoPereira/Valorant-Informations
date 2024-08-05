@@ -58,6 +58,11 @@
     margin-bottom: 30px;
 }
 
+.indexSection > .informationsAboutTheCreator > .textsDiv > p > a {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
 .indexSection > .informationsAboutTheCreator > .textsDiv > hr {
     border: none;
     border-bottom: 2px dotted var(--red);

@@ -11,7 +11,7 @@ export default function Index(): JSX.Element {
             <OmenCat/>
                 <div className={styles.textsDiv}>
                     <h3>Site criado por Guilherme Pereira, main Omen e estagnado no bronze kkkkkk</h3>
-                    <p>Caso tenha alguma coisa que você ache legal para adicionarmos ao site entre em contato comigo através do LinkedIn: Guilherme Francisco Pereira</p>
+                    <p>Caso tenha alguma coisa que você ache legal para adicionarmos ao site entre em contato comigo através do LinkedIn: <br /><a target="_blank" href="https://www.linkedin.com/in/guilherme-francisco-pereira-4a3867283">Clique aqui para ir ao meu LinkedIn</a></p>
                     <hr />
                     <p>Me adiciona lá no jogo!</p>
                     <p>yLottus #777</p>
