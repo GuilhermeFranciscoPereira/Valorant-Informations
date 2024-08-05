@@ -3,34 +3,6 @@
     --background: #0f1722;
 }
 
-.agentsSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.agentsSection > h1, .loading {
-    text-align: center;
-    font-size: 4vw;
-    color: var(--red);
-    text-shadow: 2px 2px black;
-    margin-bottom: 80px;
-}
-
-.agentsSection > h2, .howToUse {
-    text-align: center;
-    font-size: 2vw;
-    margin-bottom: 20px;
-}
-
-.agentsSection > hr {
-    border: none;
-    border-bottom: 4px dotted var(--red);
-    width: 90vw;
-    margin: 20px 0px;
-}
-
 .agentClicked {
     text-align: center;
     text-shadow: 2px 2px 2px black;
@@ -123,67 +95,7 @@
     width: 25%;
 }
 
-.showAllAgents {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 99vw;
-    gap: 1vw;
-    margin-bottom: 50px;
-}
-
-.showAllAgents > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 60vh;
-    width: 23vw;
-    border: 1px solid var(--red);
-    border-radius: 30px;
-    box-shadow: 1px 1px 5px var(--red);
-    cursor: pointer;
-    transition: .3s ease-in-out;
-}
-
-.showAllAgents > div:hover {
-    width: 25vw;
-}
-
-.showAllAgents > div:active {
-    transition: .1s;
-    border: 50px solid var(--red);
-    border-radius: 100px;
-}
-
-.showAllAgents > div > img {
-    width: 100%;
-}
-
-.showAllAgents > div > p {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 30px;
-    color: var(--red);
-    text-shadow: 2px 2px 5px black;
-}
-
 @media screen and (max-width: 900px) and (min-width: 601px){
-    .agentsSection > h1, .loading {
-        text-align: center;
-        font-size: 4vw;
-        color: var(--red);
-        text-shadow: 2px 2px black;
-        margin: 40px;
-    }
-    
-    .agentsSection > h2, .howToUse {
-        text-align: center;
-        font-size: 3vw;
-        margin: 0px 20px 40px;
-    }
-
     .agentClicked > .superiorDiv > .informationsAboutAgentClicked {
         padding: 3vw;
         font-size: 2vw;
@@ -202,41 +114,9 @@
     .agentClicked > .inferiorDiv > .abilities > .abilitiesDiv:hover {
         padding: 10px;
     }
-
-    .showAllAgents {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 97vw;
-        gap: 1vw;
-        margin: 50px 0px;
-    }
-    
-    .showAllAgents > div {
-        width: 31vw;
-    }
-
-    .showAllAgents > div:hover {
-        width: 31vw;
-    }
 }
 
 @media screen and (max-width: 600px) and (min-width: 426px) {
-    .agentsSection > h1, .loading {
-        text-align: center;
-        font-size: 5.5vw;
-        color: var(--red);
-        text-shadow: 2px 2px black;
-        margin: 0px 0px 30px 0px;
-    }
-    
-    .agentsSection > h2, .howToUse {
-        text-align: center;
-        font-size: 5vw;
-        margin: 0px 20px 40px;
-    }
-
     .agentClicked > .superiorDiv {
         flex-direction: column;
     }
@@ -283,38 +163,10 @@
     
     .agentClicked > .inferiorDiv > .abilities > .abilitiesDiv:hover {
         padding: 20px;
-    }
-
-    .showAllAgents {
-        flex-direction: column;
-        width: 99vw;
-        gap: 5vw;
-    }
-    .showAllAgents > div {
-        height: 80vh;
-        width: 90vw;
-    }
-
-    .showAllAgents > div:hover {
-        width: 90vw;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .agentsSection > h1, .loading {
-        text-align: center;
-        font-size: 6.5vw;
-        color: var(--red);
-        text-shadow: 2px 2px black;
-        margin: 0px 0px 30px 0px;
-    }
-    
-    .agentsSection > h2, .howToUse {
-        text-align: center;
-        font-size: 4.5vw;
-        margin: 0px 20px 40px;
-    }
-
     .agentClicked > .superiorDiv {
         flex-direction: column;
     }
@@ -361,24 +213,5 @@
     
     .agentClicked > .inferiorDiv > .abilities > .abilitiesDiv:hover {
         padding: 20px;
-    }
-
-    .showAllAgents {
-        flex-direction: column;
-        width: 99vw;
-        gap: 5vw;
-    }
-    
-    .showAllAgents > div {
-        height: 55vh;
-        width: 90vw;
-    }
-
-    .showAllAgents > div:hover {
-        width: 90vw;
-    }
-
-    .showAllAgents > div > p {
-        margin-top: 30px;
     }
 }

@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query';
 import axios from 'axios';
-import styles from '../../pages/Bundles/Bundles.module.css'
+import '../../styles/globalStyles.css'
 
 type allBundlesProps = {
     status: number;
@@ -21,8 +21,8 @@ export default function ShowAllBundles(): JSX.Element {
 
     return (
         <>
-        {isFetching && <h1 className={styles.loading}>Carregando...</h1>}
-        <section className={styles.showAllBundles}>
+        {isFetching && <h1 className='loading'>Carregando...</h1>}
+        <section className='showAllCards'>
             {data?.data.map(bundle => (
                 <div key={bundle.displayName + bundle.uuid}>
                     <img src={bundle.displayIcon} alt={"Foto do bundle" + bundle.displayName}/>

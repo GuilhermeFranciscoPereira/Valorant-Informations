@@ -3,34 +3,6 @@
     --background: #0f1722;
 }
 
-.gunsSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.gunsSection > h1, .loading {
-    text-align: center;
-    font-size: 4vw;
-    color: var(--red);
-    text-shadow: 2px 2px black;
-    margin-bottom: 80px;
-}
-
-.gunsSection > h2, .howToUse {
-    text-align: center;
-    font-size: 2vw;
-    margin-bottom: 20px;
-}
-
-.gunsSection > hr {
-    border: none;
-    border-bottom: 4px dotted var(--red);
-    width: 90vw;
-    margin: 20px 0px;
-}
-
 .gunClicked {
     text-align: center;
     text-shadow: 2px 2px 2px black;
@@ -162,67 +134,7 @@
     padding: 40px;
 }
 
-.showAllGuns {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 99vw;
-    gap: 1vw;
-    margin-bottom: 50px;
-}
-
-.showAllGuns > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 60vh;
-    width: 23vw;
-    border: 1px solid var(--red);
-    border-radius: 30px;
-    box-shadow: 1px 1px 5px var(--red);
-    cursor: pointer;
-    transition: .3s ease-in-out;
-}
-
-.showAllGuns > div:hover {
-    width: 25vw;
-}
-
-.showAllGuns > div:active {
-    transition: .1s;
-    border: 50px solid var(--red);
-    border-radius: 100px;
-}
-
-.showAllGuns > div > img {
-    width: 100%;
-}
-
-.showAllGuns > div > p {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 30px;
-    color: var(--red);
-    text-shadow: 2px 2px 5px black;
-}
-
 @media screen and (max-width: 900px) and (min-width: 601px){
-    .gunsSection > h1, .loading {
-        text-align: center;
-        font-size: 4vw;
-        color: var(--red);
-        text-shadow: 2px 2px black;
-        margin: 40px;
-    }
-    
-    .gunsSection > h2, .howToUse {
-        text-align: center;
-        font-size: 3vw;
-        margin: 0px 20px 40px;
-    }
-
     .gunClicked > .superiorDiv > img {
         width: 70vw;
         align-self: center;
@@ -255,41 +167,9 @@
     .gunClicked > .inferiorDiv > .skinsSection > button:hover {
         padding: 40px;
     }
-
-    .showAllGuns {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 97vw;
-        gap: 1vw;
-        margin: 50px 0px;
-    }
-    
-    .showAllGuns > div {
-        width: 31vw;
-    }
-
-    .showAllGuns > div:hover {
-        width: 31vw;
-    }
 }
 
 @media screen and (max-width: 600px) and (min-width: 426px) {
-    .gunsSection > h1, .loading {
-        text-align: center;
-        font-size: 5.5vw;
-        color: var(--red);
-        text-shadow: 2px 2px black;
-        margin: 0px 0px 30px 0px;
-    }
-    
-    .gunsSection > h2, .howToUse {
-        text-align: center;
-        font-size: 5vw;
-        margin: 0px 20px 40px;
-    }
-
     .gunClicked > .superiorDiv {
         flex-direction: column;
     }
@@ -345,38 +225,9 @@
     .gunClicked > .inferiorDiv > .skinsSection > button:hover {
         padding: 40px;
     }
-    
-
-    .showAllGuns {
-        flex-direction: column;
-        width: 99vw;
-        gap: 5vw;
-    }
-    .showAllGuns > div {
-        height: 80vh;
-        width: 90vw;
-    }
-
-    .showAllGuns > div:hover {
-        width: 90vw;
-    }
 }
 
 @media screen and (max-width: 425px) {
-    .gunsSection > h1, .loading {
-        text-align: center;
-        font-size: 6.5vw;
-        color: var(--red);
-        text-shadow: 2px 2px black;
-        margin: 0px 0px 30px 0px;
-    }
-    
-    .gunsSection > h2, .howToUse {
-        text-align: center;
-        font-size: 4.5vw;
-        margin: 0px 20px 40px;
-    }
-
     .gunClicked > .superiorDiv {
         flex-direction: column;
     }
@@ -435,24 +286,5 @@
 
     .gunClicked > .inferiorDiv > .skinsSection > .cardsContainer> .cardsSkins > img {
         width: 70vw;
-    }
-
-    .showAllGuns {
-        flex-direction: column;
-        width: 99vw;
-        gap: 5vw;
-    }
-    
-    .showAllGuns > div {
-        height: 55vh;
-        width: 90vw;
-    }
-
-    .showAllGuns > div:hover {
-        width: 90vw;
-    }
-
-    .showAllGuns > div > p {
-        margin-top: 30px;
     }
 }

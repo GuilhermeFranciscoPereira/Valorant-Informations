@@ -1,8 +1,8 @@
 import { useQuery } from 'react-query';
 import axios from 'axios';
-import styles from '../../pages/Guns/Guns.module.css'
 import { useContext } from 'react';
 import { GunContext } from '../../contexts/guns/gunsContext';
+import '../../styles/globalStyles.css'
 
 type allGunsProps = {
     status: number;
@@ -24,9 +24,9 @@ export default function ShowAllGuns(): JSX.Element {
 
     return (
         <>
-        {isFetching && <h1 className={styles.loading}>Carregando...</h1>}
-        <h2 className={styles.howToUse}>Clique na arma que deseje saber sobre!</h2>
-        <section className={styles.showAllGuns}>
+        {isFetching && <h1 className='loading'>Carregando...</h1>}
+        <h2 className='howToUse'>Clique na arma que deseje saber sobre!</h2>
+        <section className='showAllCards'>
             {data?.data.map(gun => {
                 if (gun.displayName != "Confronto") {
                 return (
