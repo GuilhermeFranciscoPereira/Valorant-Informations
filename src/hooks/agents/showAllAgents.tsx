@@ -25,11 +25,11 @@ export default function ShowAllAgents(): JSX.Element {
     return (
         <>
         {isFetching && <h1 className='loading'>Carregando...</h1>}
-        <h2 className='howToUse'>Clique no agente que deseja saber sobre!</h2>
+        {!isFetching && <h2 className='howToUse'>Clique no agente que deseja saber sobre!</h2>}
         <section className='showAllCards'>
             {data?.data.map(agent => (
                 <div key={agent.displayName} className='cardAgents' onClick={() => toSetAgentName(agent.displayName.toLowerCase())}>
-                    <img src={agent.fullPortrait} alt={"Foto do agente" + agent.displayName}/>
+                    <img src={agent.fullPortrait} alt={`Foto do agente ${agent.displayName}`}/>
                     <p>{agent.displayName}</p>
                 </div>
             ))}

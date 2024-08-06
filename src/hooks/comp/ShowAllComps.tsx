@@ -32,7 +32,7 @@ export default function ShowAllComps(): JSX.Element {
                 if(comp.tierName != 'Unused1' && comp.tierName !== 'Unused2') {
                 return (
                 <div key={index}>
-                    <img src={comp.largeIcon} alt={"Foto do rank" + comp.largeIcon}/>
+                    <img src={comp.largeIcon} alt={`Foto do rank ${comp.largeIcon}`}/>
                     <p>{comp.tierName}</p>
                 </div>
                 )}

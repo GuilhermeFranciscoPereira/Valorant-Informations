@@ -47,7 +47,7 @@ export default function ShowMapChoosed(): JSX.Element | undefined {
                 <>
                     <section className={styles.mapClicked}>
                     <div className={styles.superiorDiv}>
-                        <img src={mapClicked[0].splash} alt={"Foto do mapa" + mapClicked[0].displayName} />
+                        <img src={mapClicked[0].splash} alt={`Foto do mapa ${mapClicked[0].displayName}`} />
                         <div className={styles.informationsAboutMapClicked}>
                             <h1>{mapClicked[0].displayName}</h1>
                             <p>Bombs: {mapClicked[0].tacticalDescription ? withoutSide : <span>Este mapa não possui Bombs</span>}</p>

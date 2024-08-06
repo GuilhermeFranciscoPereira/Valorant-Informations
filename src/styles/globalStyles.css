@@ -131,6 +131,11 @@ body {
     .showAllCards > div:hover {
         width: 31vw;
     }
+
+    .showAllCards > div:active {
+        transition: .1s;
+        border: none;
+    }
     
 }
 
@@ -161,6 +166,11 @@ body {
 
     .showAllCards > div:hover {
         width: 90vw;
+    }
+
+    .showAllCards > div:active {
+        transition: .1s;
+        border: none;
     }
 }
 
@@ -196,5 +206,10 @@ body {
 
     .showAllCards > div > p {
         margin-top: 30px;
+    }
+
+    .showAllCards > div:active {
+        transition: .1s;
+        border: none;
     }
 }

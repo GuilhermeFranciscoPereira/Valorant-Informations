@@ -25,13 +25,13 @@ export default function ShowAllGuns(): JSX.Element {
     return (
         <>
         {isFetching && <h1 className='loading'>Carregando...</h1>}
-        <h2 className='howToUse'>Clique na arma que deseje saber sobre!</h2>
+        {!isFetching && <h2 className='howToUse'>Clique na arma que deseje saber sobre!</h2>}
         <section className='showAllCards'>
             {data?.data.map(gun => {
                 if (gun.displayName != "Confronto") {
                 return (
                     <div key={gun.displayName} onClick={() => (toSetGunName(gun.displayName.toLowerCase()))}>
-                    <img src={gun.displayIcon} alt={"Foto da arma" + gun.displayName}/>
+                    <img src={gun.displayIcon} alt={`Foto da arma ${gun.displayName}`}/>
                     <p>{gun.displayName}</p>
                 </div>
                 )

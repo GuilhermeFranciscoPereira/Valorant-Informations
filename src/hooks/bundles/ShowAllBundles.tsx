@@ -25,7 +25,7 @@ export default function ShowAllBundles(): JSX.Element {
         <section className='showAllCards'>
             {data?.data.map(bundle => (
                 <div key={bundle.displayName + bundle.uuid}>
-                    <img src={bundle.displayIcon} alt={"Foto do bundle" + bundle.displayName}/>
+                    <img src={bundle.displayIcon} alt={`Foto do bundle ${bundle.displayName}`}/>
                     <p>{bundle.displayName}</p>
                 </div>
             ))}

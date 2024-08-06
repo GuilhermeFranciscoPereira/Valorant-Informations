@@ -26,13 +26,13 @@ export default function ShowAllMaps(): JSX.Element {
     return (
         <>
         {isFetching && <h1 className='loading'>Carregando...</h1>}
-        <h2 className='howToUse'>Clique no mapa que deseja saber sobre!</h2>
+        {!isFetching && <h2 className='howToUse'>Clique no mapa que deseja saber sobre!</h2>}
         <section className='showAllCards'>
             {data?.data.map(map => {
                 if (map.displayName != 'Treinamento Básico' && map.uuid != 'ee613ee9-28b7-4beb-9666-08db13bb2244') {
                     return (
                         <div key={map.displayName} onClick={() => (toSetMapName(map.displayName.toLowerCase()))}>
-                        <img src={map.splash} alt={"Foto do mapa " + map.displayName}/>
+                        <img src={map.splash} alt={`Foto do mapa ${map.displayName}`}/>
                         <p>{map.displayName}</p>
                     </div>
                     )
